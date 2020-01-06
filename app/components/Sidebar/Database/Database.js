@@ -31,6 +31,11 @@ const Database = React.createClass({
             <button onClick={(e) => deleteDatabase(e, database.name)}
                     className="btn btn-default fa fa-trash"/>
           </div>
+          //FIXME: open raw query space to execute by user's query with javascript
+          <div className="query-db btn-group" role="group">
+            <button onClick={(e) => openRawSpaceQuery(e, database.name)}
+                    className="btn btn-default fa fa-trash"/>
+          </div>
         </div>
         {database.showTables ? tableNodes : ''}
       </div>

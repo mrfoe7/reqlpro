@@ -146,6 +146,11 @@ function getTableDataBetween(index, start, end, dbConnection, databaseName, tabl
   }
 }
 
+export function executeQuery(script) {
+  //TODO: 
+  // RethinkDbService.ReQLEval()
+}
+
 export function deleteDatabase(conn, dbName) {
   return dispatch => {
     return new Promise((resolve, reject) => {
